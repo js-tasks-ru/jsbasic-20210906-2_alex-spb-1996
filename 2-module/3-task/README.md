@@ -8,7 +8,16 @@
 
 ```js
 let calculator = {
-  // ... ваш код ...
+  read() {
+    this.a = +prompt('Введите значение a', 0);
+    this.b = +prompt('Введите значение b', 0);
+  }
+  mul() {
+    return this.a * this.b;
+  },
+  sum() {
+    return this.a + this.b;
+  },
 };
 
 calculator.read(3, 5);
