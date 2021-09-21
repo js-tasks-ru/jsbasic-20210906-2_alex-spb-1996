@@ -4,7 +4,7 @@ function sumSalary(salaries) {
     if (isFinite(salaries[key]) && typeof salaries[key] == 'number') {
       ResultSalary += salaries[key];
     } else {
-      return 0;
+      return ResultSalary;
     }
   }
   return ResultSalary
